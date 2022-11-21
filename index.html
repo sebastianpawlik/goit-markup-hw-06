@@ -46,13 +46,49 @@
     <section >
         <div class="header-container container">
             <h1 class="index-main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU </h1>
-            <button type="button" class="index-button "data-modal-open >Zamów usługę</button>
+            <button type="button" class="index-button" data-modal-open >Zamów usługę</button>
         </div>
         <div class="backdrop is-hidden" data-modal>
         <div class="modal">
         <button type="button" class="modal-btn" data-modal-close><span>X</span></button>
+
+        <form class="modal-form" name="contact-form">
+            <h2 class="contact-form-title">Zostaw swoje dane w formularzu poniżej</h2>
+            <div class="fields">
+                <label for="name" class="label">Imię</label>
+                <div class="field">
+                <svg class="modal-icon"><use href="./images/icons.svg#icon-person"></use></svg>
+                <input class="input" type="text" id="name" name="username"/>
+            </div>
+                <label for="telephone" class="label">Telefon</label>
+                <div class="field">
+                <svg class="modal-icon"><use href="./images/icons.svg#icon-phone-black"></use></svg>
+                <input class="input" type="tel" id="telephone" name="phonenumber"/>
+            </div>
+            
+                <label for="email" class="label">Email</label>
+                <div class="field">
+                <svg class="modal-icon"><use href="./images/icons.svg#icon-email-black"></use></svg>
+                <input class="input" type="email" id="email" name="E-mail"/>
+            </div>
+                <label class="label" for="comment" >Komentarz</label>
+                <div class="field comment">
+                <textarea class="textarea"  id="comment" name="usernamecomment"
+                  placeholder="Wprowadź tekst"></textarea>
+              </div>
+            </div>
+            <label class="checkbox">
+                    <input type="checkbox" name="statement" />
+                    <svg class="check-icon"><use href="./images/icons.svg#icon-icon-check"></use></svg>
+                    <a class="declare"> Oświadczam iż akceptuję 
+                    <span class="text-statute"> Regulamin </span>i
+                    <span class="text-statute"> Politykę Prywatności.</span></a>
+                </label>
+            <button class="contact-form-button" type="submit">Wyślij</button>
+        </form>
         </div>
     </div>
+
     </section>    
     <section class="section no-padding-bottom">   
         <div class="container ">
@@ -323,6 +359,17 @@
                     </div></li>
                   </ul>
               </div>
+              <form class="footer-form" name="newsletter">
+                <label class="footer-form-label" for="email">Zapisz się do newslettera</label>
+                <div class="input-button-container">
+                    <input class="footer-input" type="email" id="E-mail" placeholder="E-mail" />
+                    <button class="footer-button" type="submit">Zapisz się
+                    <svg><use href="./images/icons.svg#icon-icon-send"></use></svg></button>
+                </div>
+               </form>
+
+
+
               </div>
     </section>
 </footer>
